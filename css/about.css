@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;   
+}
+
+#body{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+.btn{
+    display: inline;
+    padding: 0.6rem;
+    background-color:#252318;
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(87, 105, 71);
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+
+
+#header{
+    max-width: 100vw;
+    justify-content: center;
+    position: center;
+}
+
+#header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;  
+    background-color: #756f4d;
+}
+
+#header nav #r-nav li{
+    margin: 0 0.5rem;
+}
+
+#header nav #l-nav img{
+    max-width: 5rem;
+}
+
+
+
+.body-div{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 1rem;   
+}
+
+.boxes:first-child{
+    grid-column: 1/3;
+    grid-row: 1/4;
+}
+
+.boxes:nth-child(2){
+    grid-row: 3/4;
+}
+
+.boxes:nth-child(3){
+    grid-column: 3/4;
+}
+
+.boxes:nth-child(4){
+    grid-column: 1/4;
+}
+
+
+.section{
+    max-width: 90%;
+    margin: auto;
+    margin-top: 2rem ;
+}
+
+.section .boxes{
+    padding: 4rem;
+    background-color: #eeece1d5;
+    border: 1px; 
+    border-radius: 10px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    display: inline;
+}
+
+
+
+@media(max-width: 500px){
+   
+    #header{
+        max-width: 100vw;
+        justify-content: center;
+    }
+    
+    #header nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2 1rem;  
+        margin: 0.7rem 0;
+        background-color: #1f1e18;
+    }
+    
+    #header nav #r-nav li{
+        margin: 2 0.5rem;
+    }
+    
+    #header nav #l-nav img{
+        max-width: 5rem;
+        max-height: 4rem;
+    }
+}
+
+
